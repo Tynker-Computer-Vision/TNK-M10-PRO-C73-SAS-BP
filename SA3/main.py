@@ -31,9 +31,6 @@ while True:
     # Get confidence_score from prediction[0] at index 
     
 
-    # Print prediction and confidence score
-    
-    
     keyboard_input = cv2.waitKey(1)
     if keyboard_input == 27:
         break

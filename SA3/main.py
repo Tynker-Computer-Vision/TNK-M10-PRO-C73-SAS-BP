@@ -4,7 +4,7 @@ from keras.models import load_model
 
 model = load_model("keras_Model.h5", compile=False)
 
-class_names = open("labels.txt", "r").readlines()
+classNames = open("labels.txt", "r").readlines()
 
 camera = cv2.VideoCapture(0)
 
@@ -26,13 +26,13 @@ while True:
     
     # Use np.argmax to find a index with highest value in prediction array
     
-    # Use the index to get the name from class_names
+    # Use the index to get the name from classNames
     
-    # Get confidence_score from prediction[0] at index 
+    # Get confidenceScore from prediction[0] at index 
     
 
-    keyboard_input = cv2.waitKey(1)
-    if keyboard_input == 27:
+    keyboardInput = cv2.waitKey(1)
+    if keyboardInput == 27:
         break
 
 camera.release()

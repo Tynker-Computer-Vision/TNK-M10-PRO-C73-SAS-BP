@@ -1,3 +1,0 @@
-0 Turn Right
-1 Turn Left
-2 Stop
